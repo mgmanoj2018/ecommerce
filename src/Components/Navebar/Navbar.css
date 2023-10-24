@@ -4,7 +4,7 @@
     padding: 10px;
     box-shadow: 0 1px 3px -2px #333;
 }
-.logo{
+.logo a{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -53,6 +53,7 @@
     width: 25px;
     cursor: pointer;
 }
+
 .nav-cart-count {
     width: 20px;
     height: 20px;
