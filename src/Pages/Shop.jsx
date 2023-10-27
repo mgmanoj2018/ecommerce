@@ -11,9 +11,10 @@ function Shop() {
         <Hero/>
       <Popular/>
       <Offers/>
-      <NewsLetter/>
+  
       <NewCollectins/>
-     
+      <NewsLetter/>
+    
     
     </>
  
