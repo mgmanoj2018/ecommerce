@@ -1,8 +1,11 @@
 import React from 'react'
-
+import './CSS/Cart.css'
+import CartItem from '../Components/CartItem/CartItem'
 function Cart() {
   return (
-    <div>Cart</div>
+    <div className='cart'>
+        <CartItem/>
+    </div>
   )
 }
 
