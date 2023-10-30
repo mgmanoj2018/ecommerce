@@ -13,7 +13,7 @@ function Login() {
         <button>Continue</button>
         <p className='loginsigup-login'>Allready have an account?<span>Login here</span></p>
         <div className='loginsigup-agree'>
-          <input type='checkbox' name='checkbox'  id='' name="" / >
+          <input type='checkbox' name='checkbox'   / >
           <p>By Continue, i agree to the terms of use & privacy policy </p>
         </div>
       </div>

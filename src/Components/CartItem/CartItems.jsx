@@ -2,9 +2,10 @@ import React, { useContext } from 'react'
 import './CartItems.css'
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png'
-function CartItems() {
-  const {all_product, cartItem, addTocart,removTocart,getTotalCartAmount }= useContext(ShopContext);
-  console.log(all_product)
+function CartItems(props) {
+  //  const {product} = props
+  const {all_product, cartItem,removTocart, getTotalCartAmount }= useContext(ShopContext);
+ // console.log(getTotalCartAmount(),"yrewry");
   return ( 
     <div className='cartitem'>
         <div className='cartitems-format-main'>
@@ -25,7 +26,7 @@ function CartItems() {
                     <p>${e.new_price}</p>
                     <button className='cartitems-quantity'>{cartItem[e.id]}</button>
                     <p>${e.new_price*cartItem[e.id]}</p>
-                    <img className='cartitems-remove-icon' src={remove_icon} alt='remove' onClick={()=>removTocart(cartItem[e.id])} />
+                    <img className='cartitems-remove-icon' src={remove_icon} alt='remove' onClick={()=>removTocart(e.id)} />
                    
                 </div>
                  )
